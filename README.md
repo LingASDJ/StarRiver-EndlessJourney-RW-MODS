@@ -1,5 +1,3 @@
-### StarRiver-EndlessJourney-RW-MOD
-RW-MODS PUBLIC RES
 ~~~java
 /*
  * [Mod-Info]
