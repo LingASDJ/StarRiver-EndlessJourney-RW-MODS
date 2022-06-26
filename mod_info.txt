@@ -1,0 +1,14 @@
+/*
+ * [Mod-Info]
+ * Version:0.9.0.0
+ * Type:Beta V1
+ * MD5:4c6d4d8d42d123c0733dcc5558b8ccf6
+ * Mod-Author:JDSALing/Alice World
+ * Mod-Arts:Small Fruit,Moge,BMGC,MDX,JDSALing,Fang,XiXuan
+ * Mod-Test:Lanzi,KES,Fang,Hujing,Salviacat,Qinming
+ */
+
+[mod]
+title:Ice-Storm(StarRiver-EndlessJourney)
+description:一次次的模拟战的出现的端倪越来越明显，名为冰星组织的加入了战场，并提供了全新的科技。\n\n但在这背后，蓄意策划的一场风暴正在袭来……\n\n-总制作:JDSALing,Alice World;\n\n-美工:默鸽,冷群,小果果,北梦孤辰,迷迭香,Nova\n\n-语言支持:中文(源语言),English(美国英文),日语(Japanse)\n\n-音乐制作:Prohonor\n\n-本地组支持:FromByond,Catand\n\n-联动声明:浸没技术,莱顿科技,统一教会\n\n-人物立绘:PbFish\n\n-测试人员:第四维,兰兹,口水猫,清明,牙疼,Catand,Fang,瓜皮\n\n-CopyRight-2022-RE-CORE
+thumbnail:icon.png
