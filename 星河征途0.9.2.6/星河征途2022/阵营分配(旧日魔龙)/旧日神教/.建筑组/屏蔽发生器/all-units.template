@@ -1,0 +1,46 @@
+[core]
+
+tags: globalTag
+
+#strictLevel:1 = Error on repeated keys, and missing build links
+strictLevel: 1
+
+#-------------------------------
+#settings
+#false = off, true = on
+
+@global hiddenUnits: true
+#reveals all unused units to the player on sandbox
+@global spiderDances: false
+#allows player to trigger the unused Exp Spider dances
+@global ccWallReinforcement: false
+#allows command center to call Wall Reinforcements anywhere within its range
+
+#-------------------------------
+[global_resource_风暴日晷]
+displayName:Pure-Gold
+displayName_zh:远古金属
+iconImage:ROOT:/资源/资源图标/远古金属.png
+hidden:false
+#effects
+
+[effect_dirtyExplosion]
+life:0
+alsoEmitEffects: CUSTOM:lightGround, CUSTOM:dirt, shockwave, CUSTOM:dirtySmoke, smallExplosion
+createWhenOverLiquid: false
+
+[effect_waterSplash]
+life:0
+alsoEmitEffects: CUSTOM:wave, CUSTOM:waterSplash1, CUSTOM:waterSplash2, CUSTOM:waterSplash3, CUSTOM:waterSplash4*3, CUSTOM:waterSplash5*5
+
+[effect_missileFlare1]
+life: 10
+lifeRandom: 5
+spawnChance: 0.25
+alwayStartDirAtZero: true
+ifSpawnFailsEmitEffects: CUSTOM:missileFlare2
+image: ROOT:.特效模块/yellow_flare.png
+yOffsetRelative: -3.5
+@define missileFlareSize: 0.1
+scaleFrom: ${missileFlareSize}
+scaleTo: ${missileFlareSize}

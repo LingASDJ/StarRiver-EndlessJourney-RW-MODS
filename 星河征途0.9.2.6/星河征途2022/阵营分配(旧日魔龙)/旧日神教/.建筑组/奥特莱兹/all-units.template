@@ -1,0 +1,65 @@
+[core]
+[global_resource_奥特莱兹舰载机坠毁数]
+displayName:Number of crashes of carrier based aircraft in otrez
+displayName_zh:奥特莱兹舰载机坠毁数量
+displayNameShort:Allowable capacity of carrier based aircraft in current battlefield
+displayNameShort_zh:当前战场舰载机允许容量
+displayColor:#E0E0E0
+priority:1
+hidden:true
+[global_resource_风暴日晷]
+displayName:Pure-Gold
+displayName_zh:远古金属
+iconImage:ROOT:/资源/资源图标/远古金属.png
+hidden:false
+displayColor:#FFFF00
+[global_resource_肃清者坠毁数]
+displayName: 
+displayName_zh: 
+displayNameShort: 
+displayNameShort_zh: 
+displayColor:#E0E0E0
+priority:1
+hidden:true
+[global_resource_phaseBomb]
+displayName:Phase Bomb
+displayName_zh:相位弹药
+displayNameShort:Phase Bomb
+displayNameShort_zh:相位弹药
+displayColor:#E0E0E0
+priority:1
+hidden:false
+[global_resource_纯能]
+displayName:纯能
+displayNameShort:纯能
+displayColor:#E0E0E0
+priority:1
+hidden:false
+[global_resource_金属]
+displayName:金属
+displayNameShort:金属
+displayColor:#BDBDBD
+priority:1
+hidden:false
+[global_resource_电力]
+displayName: 电力
+displayColor: #FFEB3B
+hidden:false
+displayWhenZero:true
+[global_resource_等离子体]
+displayName: 等离子体
+displayColor: #03A9F4
+hidden:false
+displayWhenZero:true
+[global_resource_碳钢]
+displayName: 碳钢
+displayColor: #9E9E9E
+hidden:false
+displayWhenZero:true
+[global_resource_有机物]
+displayName: DX4-有机物
+displayColor: #9C27B0
+hidden:false
+displayWhenZero:true
+[graphics]
+teamColorsOnTurret:true

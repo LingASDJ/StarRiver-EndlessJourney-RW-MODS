@@ -1,0 +1,273 @@
+
+[core]
+
+
+
+name: XP
+class: CustomUnitMetadata
+price: 0
+maxHp: 0
+mass: 90000
+#tags:弑神者
+showInEditor: false
+
+unitsSpawnedOnDeath:modularSpider
+
+displayText: 🔯
+displayDescription: 一切都结束了
+
+techLevel: 3
+experimental: true
+
+buildSpeed: 180s
+#availableInDemo: true
+
+radius: 100
+#displayRadius: 25
+
+isBio: false
+softCollisionOnAll: 3
+
+nanoFactorySpeed:3
+
+generation_credits: 100
+generation_delay: 40
+
+selfRegenRate:25
+
+#transportUnitsKillOnDeath: if self.isOverLiquid()
+#transportUnitsHealBy: 1
+
+builtFrom_1_name: AX
+builtFrom_1_pos:  5
+#----------------------
+
+energyMax: 60
+energyRegen: 0
+energyNeedsToRechargeToFull: true
+
+canBuild_1_name:  音波塔,Air-BasicSanXKWK,聚能电塔X,星河基地,Star-J,星河防空炮X,星河火炮X,Really,研究中心,截拦系统,万能拦截器
+
+canRepairBuildings: true
+canRepairUnits : true
+
+canReclaimResources: true
+
+nanoRange: 350
+
+nanoRepairSpeed: 34
+nanoBuildSpeed: 8
+
+#canOnlyBeAttackedByUnitsWithTags: 弑神者
+
+#isLocked:true
+
+[graphics]
+
+total_frames: 1
+
+image:        null.png
+
+image_wreak:  NONE
+
+image_turret: null.png
+#scaleImagesTo: 82
+
+scaleTurretImagesTo: 18
+
+imageScale: 0.7
+image_shadow: AUTO
+
+shadowOffsetX:1
+
+shadowOffsetY:1
+turretImageScale: 0.7
+
+teamColorsOnTurret: true
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: true
+canAttackLandUnits:   true
+canAttackUnderwaterUnits: true
+
+turretSize: 18
+turretTurnSpeed: 4
+maxAttackRange: 600
+shootDelay: 20
+
+turretMultiTargeting: true
+
+[turret_X]
+x: 0
+y: 0
+
+shoot_sound:plasma_fire
+shoot_sound_vol:0.05
+shoot_flame:small
+shoot_light:#FFccCCEE
+image:NONE
+warmup:15
+limitingRange:280
+resourceUsage: 最终之力=1
+invisible: true
+
+recoilOffset: -1
+recoilOutTime: 4
+recoilReturnTime: 6
+laserDefenceEnergyUse: 5
+
+[turret_1]
+x: 0
+y: -45
+
+shoot_sound:plasma_fire
+shoot_sound_vol:0.05
+shoot_flame:small
+shoot_light:#FFccCCEE
+image:NONE
+delay:60
+limitingRange:400
+#chargeEffectImage: ROOT:/IMGS/Xt.png
+
+recoilOffset: -1
+recoilOutTime: 4
+recoilReturnTime: 6
+laserDefenceEnergyUse:0.05
+projectile:1
+
+[turret_2]
+x: -39
+y: -21
+warmup:12
+projectile:1
+
+[turret_3]
+x: 39
+y: -20
+warmup:12
+projectile:1
+
+[projectile_1]
+directDamage: 140
+
+life: 99999
+speed: 80
+instant:true
+
+#image:null.png
+
+ballistic: true
+ballistic_delaymove_height:0
+ballistic_height: 0
+
+frame: 10
+#shadowFrame:1
+
+drawType:0
+
+targetGround: true
+areaDamage: 0
+areaRadius: 0
+deflectionPower:-1
+alwaysVisibleInFog: true
+
+#explodeEffect:CUSTOM:hexaParticle1
+
+
+
+[ai]
+useAsBuilder: true
+upgradedFrom: LastSpanish4
+
+
+[movement]
+
+movementType: HOVER
+
+moveSpeed: 0.6
+moveAccelerationSpeed: 0.08
+moveDecelerationSpeed: 0.08
+targetHeight: 1
+
+targetHeightDrift: 0
+
+
+reverseSpeedPercentage:1
+
+
+
+maxTurnSpeed: 0.8
+turnAcceleration: 0.3
+
+
+
+moveSlidingMode :false
+
+moveIgnoringBody:false
+
+moveSlidingDir:  46
+
+
+slowDeathFall: true
+
+[action_M5s]
+autoTrigger: true
+isVisible: false
+fireTurretXAtGround:Sony
+fireTurretXAtGround_withOffset:0,50 
+
+[effect_HiFiMan]
+createWhenZoomedOut: false
+stripIndex: effects
+frameIndex: 0
+
+life:420
+fadeOut: true
+attachedToUnit: false
+color: #FFFF0000
+fadeInTime: 15
+scaleFrom: 0.65
+scaleTo: 4
+alpha: 0.3
+drawUnderUnits:false
+hSpeed:0.6
+xSpeedAbsolute: -0.2
+hOffsetRandom:0.15
+yOffsetRelative: -2
+atmospheric:true
+ 
+dirOffsetRandom:180
+
+shadow:true
+xOffsetRelativeRandom: 1
+yOffsetRelativeRandom: 1
+xSpeedAbsoluteRandom:0.05
+ySpeedAbsoluteRandom:0.1
+atmospheric: true
+
+[turret_Sony]
+
+x: 0
+y:0
+
+canShoot: false
+warmup: 25
+size:0
+
+projectile:Sony
+turnSpeedAcceleration: 1.0
+
+[projectile_Sony]
+life: 60
+speed: 0.1
+targetGround: true
+directDamage: 0
+image: null.png
+drawSize:0.1
+deflectionPower:-1
+shouldRevealFog:true
+
+trailEffect: true
+trailEffect: CUSTOM:HiFiMan
+trailEffectRate: 12

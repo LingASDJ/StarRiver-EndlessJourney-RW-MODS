@@ -1,0 +1,2 @@
+[core]
+copyFrom:ROOT:.特效模块/explosions.template, ROOT:.特效模块/flares.template, ROOT:.特效模块/trails.template, ROOT:.特效模块/water.template, ROOT:.特效模块/plasma.template, ROOT:.特效模块/muzzle.template

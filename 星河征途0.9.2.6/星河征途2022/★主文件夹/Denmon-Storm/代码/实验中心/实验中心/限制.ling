@@ -1,0 +1,6 @@
+[placementRule_限制]
+searchTags:King
+searchDistance:100000
+maxCount:3
+cannotPlaceMessage:Each team can only have 4 experimental centers
+cannotPlaceMessage_zh:每队只能有4个实验中心
