@@ -1,4 +1,4 @@
 [mod]
-title:星河征途-V0.9.5.0-格罗尔高塔与永眠之梦
+title:星河征途-V0.9.5.0-格罗尔高塔与永眠之梦-Beta1
 description:每一次的战斗，都是我们逐渐成长的过程。但是，来自于自称叫“冰星”的组织给予了我们的新的对策，\n\n-模拟战或许已经变了模样。\n\n-指挥官，你是否还能看见明天的曙光？\n\n-总制作:JDSALing\n\n-美工:默鸽,冷群,小果果,北梦孤辰,迷迭香,Nova\n\n-语言支持:中文(源语言),English(美国英文),日语(Japanse)\n\n-音乐制作:Prohonor\n\n-本地组支持:FromByond,Catand\n\n-联动声明:浸没技术,莱顿科技,统一教会\n\n-人物立绘:PbFish\n\n-测试人员:第四维,兰兹,口水猫,清明,牙疼,Catand,Fang,瓜皮\n\n-CopyRight-2022-RE-CORE
 thumbnail:icon.png
