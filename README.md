@@ -11,6 +11,14 @@
 ~~~
 
 ---
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) 
+[![](https://img.shields.io/badge/License-Re--Core%20V1-blue)](https://img.shields.io/crates/l/s)
+
+[![](https://img.shields.io/badge/Re--Core-starriver-blue)](https://img.shields.io/crates/l/s)
+![](https://img.shields.io/github/repo-size/LingASDJ/StarRiver-EndlessJourney-RW-MODS?color=%23F8BBD0)
+
+![](https://img.shields.io/github/release/LingASDJ/StarRiver-EndlessJourney-RW-MODS?color=%235C6BC0&label=Version:)
+
 The Galaxy Star River Mods Source Code,   
 you can edit this code and distribute the Galaxy Star River DLC pack.   
 However, if you need to use the material, please contact a team member for authorization.
