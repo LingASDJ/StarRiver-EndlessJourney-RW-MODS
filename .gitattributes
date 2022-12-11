@@ -1,1 +1,2 @@
-*.ini,*.ling linguist-detectable
+*.ini linguist-detectable
+*.Ling linguist-detectable
