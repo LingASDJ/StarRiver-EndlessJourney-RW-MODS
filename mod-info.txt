@@ -1,5 +1,5 @@
 [mod]
-title:StarRiver-V0.9.5.0-GT&DE-#0-HotFixedXXX
-description:时代的落幕，一个新的时代正在崛起。而三大帝国的战斗还在继续，我们是否已经忘记了这是模拟战了？\n\n-总制作:JDSALing,Lilys\n\n-美工:DC,默鸽,冷群,小果果,北梦孤辰,迷迭香,Lea,葛城\n\n-语言支持:中文(源语言),English(美国英文)\n\n-音乐制作:Prohonor\n\n-本地组支持:Catand\n\n-联动声明:浸没技术,莱顿科技,统一教会\n\n-人物立绘:PbFish\n\n-测试人员:第四维,兰兹,口水猫,清明,牙疼,Catand,Fang,瓜皮,Mizuki,卡俄斯,葛城,EDAJ,此账号已注销,白虎鲸,苏叶\n\n-CopyRight-2022-RE-CORE\n\n-The end of the era, a new era is rising. The battle of the three empires is still going on. Have we forgotten that this is a simulated war?\n-Chief Producer: JDSALing \n-Artists: Mo Ge, Leng Qun, Xiao Guoguo, Beimeng Guchen, Rosemary, Lea\n-Language Support: Chinese (source language), English (American English)-\nCopyRight-2022-RE-CORE
+title:StarRiver-V0.9.5.0-GT&DE-#1-Beta1.5
+description:时代的落幕，一个新的时代正在崛起。而三大帝国的战斗还在继续，我们是否已经忘记了这是模拟战了？\n\n-总制作:JDSALing,Lilys\n\n-美工:DC,默鸽,冷群,小果果,北梦孤辰,迷迭香,Lea,葛城\n\n-语言支持:中文(源语言),English(美国英文)\n\n-音乐制作:Prohonor\n\n-本地组支持:Catand\n\n-联动声明:浸没技术,莱顿科技,统一教会\n\n-人物立绘:PbFish\n\n-测试人员:第四维,兰兹,口水猫,清明,牙疼,Catand,Fang,瓜皮,Mizuki,卡俄斯,葛城,EDAJ,此账号已注销,白虎鲸,苏叶\n\n-CopyRight-2022-RE-CORE\n\n-The end of the era, a new era is rising. The battle of the three empires is still going on.Have we forgotten that this is a simulated war?\n-Chief Producer: JDSALing \n-Artists: Mo Ge, Leng Qun, Xiao Guoguo, Beimeng Guchen, Rosemary, Lea\n-Language Support: Chinese (source language), English (American English)-\nCopyRight-2022-RE-CORE
 thumbnail:icon.png
 minVersion:1.15p11
