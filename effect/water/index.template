@@ -1,0 +1,131 @@
+[effect_wave]
+life:150
+image: ROOT:effect/water/shockwave.png
+scaleFrom: 0
+scaleTo: 0.8
+createWhenOverLand: false
+
+[effect_waterSplash1]
+life: 100
+image: ROOT:effect/water/bubbles.png
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+xSpeedAbsolute: 0.1
+xSpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: 3
+dirOffset:45
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:effect/water/bubbles.png
+shadow: true
+
+[effect_waterSplash2]
+life: 100
+image:ROOT:effect/water/bubbles.png
+ySpeedAbsolute: 0.1
+ySpeedAbsoluteRandom: 0.05
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: 3
+xOffsetRelativeRandom: -3
+dirOffset:185
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:effect/water/bubbles.png
+shadow: true
+
+[effect_waterSplash3]
+life: 100
+image: ROOT:effect/water/bubbles.png
+ySpeedAbsolute: -0.1
+ySpeedAbsoluteRandom: 0.05
+yOffsetRelativeRandom: -3
+xOffsetRelativeRandom: 0
+dirOffset:45
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:effect/water/bubbles.png
+shadow: true
+
+[effect_waterSplash4]
+life: 100
+image: ROOT:effect/water/bubbles.png
+scaleFrom: 0.4
+scaleTo: 1.2
+physics: true
+physicsGravity: 0.4
+hSpeed: 1
+hSpeedRandom: 0.5
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:effect/water/bubbles.png
+shadow: true
+
+[effect_waterSplash5]
+life: 100
+image: ROOT:effect/water/bubbles.png
+scaleFrom: 0.4
+scaleTo: 1.2
+physics: true
+physicsGravity: 0.4
+hSpeed: 1.5
+hSpeedRandom: 0.75
+ySpeedRelativeRandom: 0.25
+xSpeedRelativeRandom: 0.25
+createWhenOverLand: false
+imageShadow: SHADOW:ROOT:effect/water/bubbles.png
+shadow: true
+
+
+[effect_水波1]
+image:ROOT:effect/water/bubbles.png
+createWhenOverLand: false
+life: 120
+spawnChance: 1
+fadeOut: true
+attachedToUnit: false
+fadeInTime:10
+scaleFrom: 0.25
+scaleTo: 3.2
+alpha: 0.6
+drawUnderUnits:true
+yOffsetRelative: -45
+ySpeedRelative: 0.3
+dirOffsetRandom: 10
+dirSpeedRandom: 0.1
+#atmospheric: true
+
+[effect_水雾]
+image:ROOT:effect/water/waterb.png
+createWhenOverLand: false
+life: 120
+spawnChance: 1
+fadeOut: true
+attachedToUnit: false
+fadeInTime:10
+scaleFrom: 0.25
+scaleTo: 3.2
+alpha: 0.6
+drawUnderUnits:true
+yOffsetRelative: 0
+ySpeedRelative: 0.3
+dirOffsetRandom: 10
+dirSpeedRandom: 0.1
+#atmospheric: true
+
+[effect_水波2]
+image:ROOT:effect/water/bubbles.png
+createWhenOverLand: false
+life: 90
+spawnChance: 1
+fadeOut: true
+attachedToUnit: false
+fadeInTime:10
+scaleFrom: 0.5
+scaleTo: 3.2
+alpha: 0.6
+drawUnderUnits:true
+yOffsetRelative:45
+ySpeedRelative: 0.3
+dirOffsetRandom: 5
+dirSpeedRandom: 0.05
+atmospheric: true
