@@ -2,13 +2,6 @@
 #给每个单位套上皇帝的护盾，避免没有这个节报错
 maxShield:0
 
-[action_建筑检修]
-autoTrigger:if self.globalTeamTags(includes="建筑检修T") and not self.hasFlag(id=20)
-setUnitStats:maxHp=self.maxHp*0.7,hp=self.maxHp
-addResources:setFlag=20
-isVisible:false
-ai_isDisabled:true
-
 [action_机体升级I]
 autoTriggerOnEvent:created
 requireConditional:if numberOfUnitsInEnemyTeam(withTag="机体升级I",greaterThan=0)
