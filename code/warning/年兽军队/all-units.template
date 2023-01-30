@@ -1,0 +1,73 @@
+[core]
+#给每个单位套上皇帝的护盾，避免没有这个节报错
+maxShield:0
+
+[action_机体升级I]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="机体升级I",greaterThan=0) and not self.tags(includes='凶兽')
+setUnitStats:maxHp=self.maxHp*1.3,hp=self.maxHp
+isVisible:false
+ai_isDisabled:true
+
+[action_机体升级II]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="机体升级II",greaterThan=0) and not self.tags(includes='凶兽')
+setUnitStats:maxHp=self.maxHp*1.5,hp=self.maxHp
+isVisible:false
+ai_isDisabled:true
+
+[action_机体升级-恢复]
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="机体升级I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="机体升级II",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="机体升级III",greaterThan=0)
+setUnitStats:maxHp=${core.maxHp}*1
+isVisible:false
+ai_isDisabled:true
+
+[action_超速策略]
+autoTrigger:if numberOfUnitsInEnemyTeam(withTag="超速策略I",greaterThan=0)
+setUnitStats:moveSpeed=${movement.moveSpeed}*1.4
+isVisible:false
+ai_isDisabled:true
+
+[action_超速策略-恢复]
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="超速策略I",greaterThan=0)
+setUnitStats:moveSpeed=${movement.moveSpeed}*1
+isVisible:false
+ai_isDisabled:true
+
+[action_护盾庇护]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="护盾庇护I",greaterThan=0)
+setUnitStats:maxShield=${core.maxShield}*1.5,shield=self.maxShield
+isVisible:false
+ai_isDisabled:true
+
+[action_护盾庇护-恢复]
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="护盾庇护I",greaterThan=0)
+setUnitStats:maxShield=${core.maxShield}*1
+isVisible:false
+ai_isDisabled:true
+
+#合约系统
+[action_苦难之路I]
+autoTrigger:if numberOfUnitsInEnemyTeam(withTag="苦难之路I",greaterThan=0)
+setUnitStats:shootDamageMultiplier=1.5
+isVisible:false
+ai_isDisabled:true
+
+[action_苦难之路II]
+autoTrigger:if numberOfUnitsInEnemyTeam(withTag="苦难之路II",greaterThan=0)
+setUnitStats:shootDamageMultiplier=1.7
+isVisible:false
+ai_isDisabled:true
+
+[action_苦难之路III]
+autoTrigger:if numberOfUnitsInEnemyTeam(withTag="苦难之路III",greaterThan=0)
+setUnitStats:shootDamageMultiplier=1.9
+isVisible:false
+ai_isDisabled:true
+
+[action_苦难之路-恢复]
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="苦难之路I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="苦难之路II",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="苦难之路III",greaterThan=0)
+setUnitStats:shootDamageMultiplier=1
+isVisible:false
+ai_isDisabled:true
