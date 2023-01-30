@@ -58,4 +58,4 @@ However, if you need to use the material, please contact a team member for autho
 * Alice
 
 ---
-Re-Core-Mod-Stuido©2018-2022 All right copyright
+Re-Core-Mod-Stuido©2018-2023 All right copyright
