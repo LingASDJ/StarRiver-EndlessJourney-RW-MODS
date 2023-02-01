@@ -2,6 +2,15 @@
 #给每个单位套上皇帝的护盾，避免没有这个节报错
 maxShield:0
 
+###邪红母舰
+strictLevel:0
+[global_resource_力场]
+hidden:true
+displayRoundedDown:false
+[global_resource_濒临]
+hidden:true
+displayRoundedDown:false
+
 [action_机体升级I]
 autoTriggerOnEvent:created
 requireConditional:if numberOfUnitsInEnemyTeam(withTag="机体升级I",greaterThan=0)
@@ -16,20 +25,33 @@ setUnitStats:maxHp=self.maxHp*1.5,hp=self.maxHp
 isVisible:false
 ai_isDisabled:true
 
+[action_机体升级III]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="机体升级III",greaterThan=0)
+setUnitStats:maxHp=self.maxHp*1.7,hp=self.maxHp
+isVisible:false
+ai_isDisabled:true
+
 [action_机体升级-恢复]
 autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="机体升级I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="机体升级II",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="机体升级III",greaterThan=0)
 setUnitStats:maxHp=${core.maxHp}*1
 isVisible:false
 ai_isDisabled:true
 
-[action_超速策略]
+[action_超速策略I]
 autoTrigger:if numberOfUnitsInEnemyTeam(withTag="超速策略I",greaterThan=0)
 setUnitStats:moveSpeed=${movement.moveSpeed}*1.4
 isVisible:false
 ai_isDisabled:true
 
+[action_超速策略II]
+autoTrigger:if numberOfUnitsInEnemyTeam(withTag="超速策略II",greaterThan=0)
+setUnitStats:moveSpeed=${movement.moveSpeed}*1.8
+isVisible:false
+ai_isDisabled:true
+
 [action_超速策略-恢复]
-autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="超速策略I",greaterThan=0)
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="超速策略I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="超速策略II",greaterThan=0)
 setUnitStats:moveSpeed=${movement.moveSpeed}*1
 isVisible:false
 ai_isDisabled:true
@@ -41,8 +63,15 @@ setUnitStats:maxShield=${core.maxShield}*1.5,shield=self.maxShield
 isVisible:false
 ai_isDisabled:true
 
+[action_护盾庇护2]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="护盾庇护II",greaterThan=0)
+setUnitStats:maxShield=${core.maxShield}*2.0,shield=self.maxShield
+isVisible:false
+ai_isDisabled:true
+
 [action_护盾庇护-恢复]
-autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="护盾庇护I",greaterThan=0)
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="护盾庇护I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="护盾庇护II",greaterThan=0)
 setUnitStats:maxShield=${core.maxShield}*1
 isVisible:false
 ai_isDisabled:true
