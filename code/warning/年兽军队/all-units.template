@@ -1,7 +1,7 @@
 [core]
 #给每个单位套上皇帝的护盾，避免没有这个节报错
 maxShield:0
-
+armour:0
 ###邪红母舰
 strictLevel:0
 [global_resource_力场]
@@ -98,5 +98,25 @@ ai_isDisabled:true
 [action_苦难之路-恢复]
 autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="苦难之路I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="苦难之路II",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="苦难之路III",greaterThan=0)
 setUnitStats:shootDamageMultiplier=1
+isVisible:false
+ai_isDisabled:true
+
+[action_全副武装I]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="全副武装I",greaterThan=0)
+setUnitStats:armour+=10
+isVisible:false
+ai_isDisabled:true
+
+[action_全副武装II]
+autoTriggerOnEvent:created
+requireConditional:if numberOfUnitsInEnemyTeam(withTag="全副武装II",greaterThan=0)
+setUnitStats:armour+=20
+isVisible:false
+ai_isDisabled:true
+
+[action_全副武装-恢复]
+autoTrigger:if not numberOfUnitsInEnemyTeam(withTag="全副武装I",greaterThan=0) and not numberOfUnitsInEnemyTeam(withTag="全副武装II",greaterThan=0)
+setUnitStats:armour=${core.armour}*1
 isVisible:false
 ai_isDisabled:true
