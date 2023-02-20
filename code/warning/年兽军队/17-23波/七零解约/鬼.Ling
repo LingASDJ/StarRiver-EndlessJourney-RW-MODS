@@ -1,6 +1,0 @@
-[core]
-showInEditor: false
-isUnselectable:true
-canNotBeDirectlyAttacked:true
-showOnMinimap: false
-canNotBeDamaged:true
