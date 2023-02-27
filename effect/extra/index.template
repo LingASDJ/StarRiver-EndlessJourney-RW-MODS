@@ -1,0 +1,15 @@
+[effect_金色爆破]
+life:30
+priority:critical
+fadeOut:false
+fadeInTime:16
+attachedToUnit:false
+scaleFrom:0.1
+scaleTo:0.6
+image:ROOT:effect/extra/redbombeffect.png
+total_frames:12
+color:#ffff00
+alpha:1
+animateFrameStart:0
+animateFrameEnd:11
+animateFrameSpeed:0.4
