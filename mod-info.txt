@@ -1,5 +1,5 @@
 [mod]
 title:StarRiver-V0.9.5.1-T2.5-Beta2
-description:时间错乱的根源，代价的根本只是一场演习战的时间。\n\n-总制作:JDSALing,Lilys\n\n-美工:DC,默鸽,冷群,小果果,北梦孤辰,迷迭香,Lea,葛城\n\n-语言支持:中文(源语言),English(美国英文)\n\n-音乐制作:Prohonor\n\n-本地组支持:Catand\n\n-联动声明:浸没技术,莱顿科技,统一教会\n\n-人物立绘:PbFish\n\n-测试人员:第四维,兰兹,口水猫,清明,牙疼,Catand,Fang,瓜皮,Mizuki,卡俄斯,葛城,EDAJ,此账号已注销,白虎鲸,苏叶,Plee\n\n-外部联动:SES BTM MP97\n\n-CopyRight-2023-RE-CORE\n\n-The root of the time confusion, the cost is simply a practice war time.\n-Chief Producer: JDSALing \n-Artists: Mo Ge, Leng Qun, Xiao Guoguo, Beimeng Guchen, Rosemary, Lea\n-Language Support: Chinese (source language), English (American English)-\nExternal linkage: SES BTM MP97\n\n-CopyRight-2023-RE-CORE
+description:风暴已然袭来，而悖论仍在继续\n\n-总制作:JDSALing,Lilys\n\n-美工:DC,默鸽,冷群,小果果,北梦孤辰,迷迭香,Lea,葛城\n\n-语言支持:中文(源语言),English(美国英文)\n\n-音乐制作:Prohonor\n\n-本地组支持:Catand\n\n-联动声明:浸没技术,莱顿科技,统一教会\n\n-人物立绘:PbFish\n\n-测试人员:第四维,兰兹,口水猫,清明,牙疼,Catand,Fang,瓜皮,Mizuki,卡俄斯,葛城,EDAJ,此账号已注销,白虎鲸,苏叶,Plee\n\n-外部联动:SES BTM MP97\n\n-CopyRight-2023-RE-CORE\n\n-The root of the time confusion, the cost is simply a practice war time.\n-Chief Producer: JDSALing \n-Artists: Mo Ge, Leng Qun, Xiao Guoguo, Beimeng Guchen, Rosemary, Lea\n-Language Support: Chinese (source language), English (American English)-\nExternal linkage: SES BTM MP97\n\n-CopyRight-2023-RE-CORE
 thumbnail:icon.png
 minVersion:1.15p11
