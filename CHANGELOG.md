@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/LingASDJ/StarRiver-EndlessJourney-RW-MODS/compare/v1.0.1...v1.0.2) (2023-03-21)
+
+
+### MODS
+
+* StarRiverUpdateScripts.yml ([14b4ebc](https://github.com/LingASDJ/StarRiver-EndlessJourney-RW-MODS/commit/14b4ebc85ee51fce449b64e9045869c1f978de49))
+
 ## [1.0.1](https://github.com/LingASDJ/StarRiver-EndlessJourney-RW-MODS/compare/v1.0.0...v1.0.1) (2023-03-21)
 
 
@@ -49,4 +56,4 @@ E.火焰塔追加T2
 ## 2023-1-4 (22:00) A测抢先版-Beta1版  
 1.三大阵营正式初步加完T2  
 2.A测抢先版更新  
-3.其他bug修复  
+3.其他bug修复
