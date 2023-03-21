@@ -28,4 +28,4 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}' # 设置 GitHub Token 密钥，从 secrets 中获取
           MERGE_LABELS: ''
-          MERGE_FILTER_AUTHOR: 'mason369' # 只有作者是 mason369 的 PR 才会被自动合并。
+          MERGE_FILTER_AUTHOR: 'LingASDJ' # 只有作者是 Ling 的 PR 才会被自动合并。
