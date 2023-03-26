@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.5](https://github.com/LingASDJ/StarRiver-EndlessJourney-RW-MODS/compare/v1.0.2...v0.9.5) (2023-03-26)
+
+
+### update
+
+* 0.9.5.3-Beta2 ([525b0c0](https://github.com/LingASDJ/StarRiver-EndlessJourney-RW-MODS/commit/525b0c04fd9a9a736e561c0191debbdbb176c46c))
+
 ## [1.0.2](https://github.com/LingASDJ/StarRiver-EndlessJourney-RW-MODS/compare/v1.0.1...v1.0.2) (2023-03-21)
 
 
