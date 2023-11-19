@@ -2,6 +2,15 @@
 [global_resource_Res]
 hidden:true
 
+### 全局资源
+
+[global_resource_异构金属]
+displayName:Isomeric-Metal
+displayName_zh:异构金属
+#iconImage:ROOT:/资源/资源图标/远古金属.png
+hidden:false
+displayColor:#FFFF00
+
 ###除岁行动
 
 [action_资金分流I]

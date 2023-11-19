@@ -14,6 +14,21 @@ animateFrameStart:0
 animateFrameEnd:11
 animateFrameSpeed:0.4
 
+[effect_常规爆破]
+life:30
+priority:critical
+fadeOut:false
+fadeInTime:1
+attachedToUnit:false
+scaleFrom:0.8
+scaleTo:2.8
+image:ROOT:effect/extra/爆破.png
+total_frames:16
+alpha:1
+animateFrameStart:0
+animateFrameEnd:15
+animateFrameSpeed:0.5
+
 [effect_蓝色聚爆]
 life:30
 priority:critical
