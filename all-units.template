@@ -1,4 +1,8 @@
 
+[core]
+#启用严格级别，避免重复代码
+strictLevel:1
+
 [global_resource_Res]
 hidden:true
 
