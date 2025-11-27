@@ -8,6 +8,32 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      # 1. 检出代码（需完整克隆以支持打包）
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整提交历史（可选，release-please需要）
+
+      # 2. 从Commit消息提取版本号（支持格式：commit msg包含 `release-as: x.x.x`）
+      - name: Extract release version from commit message
+        id: extract_version
+        run: |
+          # 获取触发push的Commit消息
+          COMMIT_MSG="${{ github.event.head_commit.message }}"
+          # 正则提取release-as后的版本号（去除空格）
+          RELEASE_VERSION=$(echo "$COMMIT_MSG" | grep -oP 'release-as:\s*\K.*' | tr -d '[:space:]')
+          
+          # 校验版本号是否存在
+          if [ -z "$RELEASE_VERSION" ]; then
+            echo "❌ Error: Commit消息中未找到release-as字段！"
+            echo "示例Commit消息格式：release-as: 0.9.9.1-Beta2"
+            exit 1
+          fi
+          
+          # 输出到环境变量供后续步骤使用
+          echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
+          echo "::set-output name=version::$RELEASE_VERSION"
+
+      # 3. 运行release-please（动态版本号）
       - uses: GoogleCloudPlatform/release-please-action@v3
         id: release
         with:
@@ -33,5 +59,33 @@ jobs:
           {"type": "mod", "section":"MOD", "hidden":false},
           {"type": "del", "section":"Delete", "hidden":false}
           ]'
-          release-as: 0.9.9.1-Beta2
+          release-as: ${{ env.RELEASE_VERSION }}  # 使用动态提取的版本号
           bump-minor-pre-major: true
+
+      # 4. 打包源代码为rwmod（压缩为zip后改后缀）
+      - name: Package source code as rwmod
+        run: |
+          # 压缩源代码（排除.git/.github等无关目录）
+          zip -r "${{ env.RELEASE_VERSION }}.zip" . \
+            -x ".git/*" ".github/*" "*.zip" "*.rwmod" "node_modules/*"
+          # 重命名为rwmod格式
+          mv "${{ env.RELEASE_VERSION }}.zip" "${{ env.RELEASE_VERSION }}.rwmod"
+          echo "✅ 已生成rwmod包：${{ env.RELEASE_VERSION }}.rwmod"
+
+      # 5. 上传rwmod到GitHub Artifact（方便下载）
+      - name: Upload rwmod artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.RELEASE_VERSION }}-source
+          path: ${{ env.RELEASE_VERSION }}.rwmod
+
+      # 6. （可选）将rwmod附加到Release（仅当release创建成功时执行）
+      - name: Upload rwmod to GitHub Release
+        if: ${{ steps.release.outputs.release_created }}  # 仅release创建时执行
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: |
+          gh release upload \
+            ${{ steps.release.outputs.tag_name }} \
+            ${{ env.RELEASE_VERSION }}.rwmod \
+            --clobber  # 覆盖同名文件（如果存在）
