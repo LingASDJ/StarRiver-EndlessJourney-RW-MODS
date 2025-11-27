@@ -33,5 +33,5 @@ jobs:
           {"type": "mod", "section":"MOD", "hidden":false},
           {"type": "del", "section":"Delete", "hidden":false}
           ]'
-          release-as: 0.9.5.4.2
+          release-as: 0.9.9.1-Beta2
           bump-minor-pre-major: true
