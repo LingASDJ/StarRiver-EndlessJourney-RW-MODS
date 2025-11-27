@@ -27,10 +27,11 @@ jobs:
           fi
           
           echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
-          # 使用新的环境文件方式设置步骤输出（替代set-output）
           echo "version=$RELEASE_VERSION" >> $GITHUB_OUTPUT
+          # 生成tag名称（通常release-please的tag格式为v+版本号，需匹配）
+          echo "TAG_NAME=v${RELEASE_VERSION}" >> $GITHUB_ENV
 
-      # 运行release-please创建Release（动态版本号）
+      # 运行release-please（动态版本号）
       - uses: GoogleCloudPlatform/release-please-action@v3
         id: release
         with:
@@ -63,19 +64,23 @@ jobs:
       - name: Package source code as rwmod
         run: |
           # 压缩源代码（排除无关目录）
-          zip -r "${{ env.RELEASE_VERSION }}.zip" . \
+          zip -r "${{ env.RELEASE_VERSION }}.rwmod.zip" . \
             -x ".git/*" ".github/*" "*.zip" "*.rwmod" "node_modules/*"
-          # 重命名为rwmod格式
-          mv "${{ env.RELEASE_VERSION }}.zip" "${{ env.RELEASE_VERSION }}.rwmod"
+          # 直接命名为rwmod（无需先zip再改名，避免混淆）
+          mv "${{ env.RELEASE_VERSION }}.rwmod.zip" "${{ env.RELEASE_VERSION }}.rwmod"
           echo "✅ 已生成rwmod包：${{ env.RELEASE_VERSION }}.rwmod"
 
-      # 将rwmod文件上传到GitHub Release（仅Release创建成功时执行）
+      # 直接上传rwmod到Release（无论Release是否新创建）
       - name: Upload rwmod to GitHub Release
-        if: ${{ steps.release.outputs.release_created }}
         env:
           GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
-          gh release upload \
-            ${{ steps.release.outputs.tag_name }} \
+          # 若Release不存在则创建，存在则直接上传（--draft/--prerelease可按需添加）
+          gh release create ${{ env.TAG_NAME }} \
+            --title "Release ${{ env.RELEASE_VERSION }}" \
+            --notes "Automated release for version ${{ env.RELEASE_VERSION }}" \
+            || true  # 忽略Release已存在的错误
+          # 上传rwmod文件（--clobber覆盖已存在的同名文件）
+          gh release upload ${{ env.TAG_NAME }} \
             "${{ env.RELEASE_VERSION }}.rwmod" \
             --clobber
